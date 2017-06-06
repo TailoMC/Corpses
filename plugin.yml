@@ -1,0 +1,7 @@
+name: Corpses
+author: Tailo
+version: 1.0
+
+main: me.Tailo.Corpses.System.main
+
+depend: [ProtocolLib]
