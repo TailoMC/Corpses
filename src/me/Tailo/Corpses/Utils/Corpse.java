@@ -111,6 +111,8 @@ public class Corpse {
 			
 			players.sendBlockChange(bedloc, Material.BED_BLOCK, (byte) 0);
 			
+			sendPlayerInfo(players, this);
+			
 			try {
 				main.pm.sendServerPacket(players, corpse);
 				main.pm.sendServerPacket(players, bed);
@@ -118,8 +120,6 @@ public class Corpse {
 			} catch (InvocationTargetException e) {
 				e.printStackTrace();
 			}
-			
-			sendPlayerInfo(players, this);
 			
 		}
 		
