@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import me.Tailo.Corpses.System.main;
-import net.minecraft.server.v1_8_R3.MathHelper;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -224,7 +223,7 @@ public class Corpse {
 	}
 	
 	public static int toLocation(double d) {
-		return MathHelper.floor(d * 32.0D);
+		return (int) Math.floor(d * 32.0D);
 	}
 
 	public static byte toRotation(float f) {
